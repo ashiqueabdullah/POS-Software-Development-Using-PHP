@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap');
+:root{
+	--header-bg: linear-gradient(to right,#404e67 0,#6f85ad 100%);
+	--header-bottom: 1px solid #8596b5;
+	--box-one:linear-gradient(to right,#008385 0,#00e7eb 100%);
+	--box-two:linear-gradient(to right,#ff864a 0,#ffcab0 100%);
+	--box-three:linear-gradient(to right,#ff425c 0,#ffa8b4 100%);
+	--box-four:linear-gradient(to right,#11a578 0,#32eab2 100%);
+	--bg-purple: #9c27b0;
+	--primary-text-color: #404e67;
+	--second-text-color: #626e82;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
 
-
+body{
+	box-sizing: border-box;
+	/* font-family: 'Montserrat', sans-serif; */
+	/* font-family: 'Open Sans', sans-serif; */
+}
 
