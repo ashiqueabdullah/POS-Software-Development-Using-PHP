@@ -9,6 +9,8 @@
 	--bg-purple: #9c27b0;
 	--primary-text-color: #404e67;
 	--second-text-color: #626e82;
+	--font-open: 'Open Sans', sans-serif;
+	--font-mons: 'Montserrat', sans-serif;
 }
 *{
 	padding: 0px;
@@ -17,7 +19,100 @@
 
 body{
 	box-sizing: border-box;
-	/* font-family: 'Montserrat', sans-serif; */
-	/* font-family: 'Open Sans', sans-serif; */
+	margin: 0px;
+	padding: 0px;
 }
 
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-image: var(--header-bg);
+	border-bottom: var(--header-bottom);
+}
+.header .left , .header .right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 25%;
+	color: white;
+}
+.header .logo img{
+	width: 50px;
+}
+.header .left input{
+	display: none;
+}
+.header .left label{
+	color: white;
+	cursor: pointer;
+}
+.header .left .check{
+	font-size: 20px;
+	font-family: var(--font-mons);
+	font-weight: 400;
+	margin: 0px;
+	padding: 0px; 
+}
+.header .left .admin{
+	font-size: 14px;
+	font-family: var(--font-mons);
+	font-weight: 400; 
+	margin: 0px;
+	padding: 0px;
+}
+.header .left a{
+	text-decoration: none;
+}
+
+.header .left .pos a{
+	background-color: #16d39a;
+	font-size: 16px;
+	padding: 10px 15px;
+	border-radius: 20px;
+	color: white;
+	margin: 0px;
+	transition: .3s;
+}
+.header .left .pos a:hover{
+	background-color: #15fdb7;
+}
+
+
+
+.header .right .language p, .header .right .name , 
+.header .right .notification , .header .right .time , 
+.header .right .message {
+	font-size: 14px;
+	font-family: var(--font-mons);
+	font-weight: 400; 
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+header .bottom-menu{
+	background-color: white;
+	padding: 10px 20px;
+	box-shadow: 2px 4px 20px -4px rgb(0 0 0 / 10%);
+}
+header .bottom-menu ul{
+	margin: 0px;
+	padding: 0px;
+}
+header .bottom-menu ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 10px;
+}
+header .bottom-menu ul li a{
+	display: block;
+	text-decoration: none;
+	padding: 5px 5px;
+	color: var(--second-text-color);
+	transition: .3s;
+}
+header .bottom-menu ul li a:hover{
+	background-color: #16d39a;
+	color: white;
+}
