@@ -80,9 +80,7 @@ header input{
 	background-color: #15fdb7;
 }
 
-
-
-.header .right .language p, .header .right .name , 
+.header .right .name , 
 .header .right .notification , .header .right .time , 
 .header .right .message {
 	font-size: 14px;
@@ -150,6 +148,7 @@ header .admn-setting .all-menu ul{
 header .admn-setting .all-menu ul li{
 	display: block;
 	list-style-type: none;
+	margin-bottom: 5px;
 }
 header .admn-setting .all-menu ul li p{
 	border-bottom: 1px solid #80808038;
@@ -160,4 +159,58 @@ header .admn-setting .all-menu ul li p{
 header .admn-setting .all-menu ul li a{
 	text-decoration: none;
 	color: var(--second-text-color); 
+}
+
+header .right .language label{
+	font-size: 14px;
+	font-family: var(--font-mons);
+	font-weight: 400; 
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+header .right .language .language-menu{
+	position: absolute;
+	width:30%;
+	background-color: white;
+	padding: 10px;
+	left: 68%;
+	top: 10.5%;
+	box-shadow: 2px 4px 20px -4px rgb(0 0 0 / 10%);
+	display: none;
+}
+header .right .language .language-menu ul{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+header .right .language .language-menu ul li{
+	min-width: 25%;
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+header .right .language .language-menu ul li a{
+	text-decoration: none;
+	display: block;
+	color: var(--second-text-color);
+	font-size: 14px;
+	font-weight: 400;
+	font-family: var(--font-mons);
+	border-bottom: 1px solid #80808038; 
+}
+header input#language:checked ~ .language-menu{
+	display: block;
+}
+header .user{
+	width: 32%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+header .user img{
+	width: 30px;
 }
