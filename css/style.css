@@ -41,8 +41,9 @@ body{
 .header .logo img{
 	width: 50px;
 }
-.header .left input{
+header input{
 	display: none;
+	transition: .3s;
 }
 .header .left label{
 	color: white;
@@ -115,4 +116,48 @@ header .bottom-menu ul li a{
 header .bottom-menu ul li a:hover{
 	background-color: #16d39a;
 	color: white;
+}
+
+header input#check:checked ~ .bottom-menu ul li span{
+	display: none;
+}
+
+header .admn-setting .all-menu{
+	position: absolute;
+	background-color: white;
+	overflow: hidden;
+	width: 98%;
+	left: 1%;
+	top: 10.5%;
+	display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    color: var(--second-text-color);
+    box-shadow: 2px 4px 20px -4px rgb(0 0 0 / 10%);
+}
+header .admn-setting .admin-menu{
+	display: none;
+}
+header input#admin:checked ~  .admin-menu{
+	display: block;
+}
+header .admn-setting .all-menu ul{
+	margin: 0px;
+	padding: 0px;
+	width: 25%!important;
+	margin-bottom: 20px;
+}
+header .admn-setting .all-menu ul li{
+	display: block;
+	list-style-type: none;
+}
+header .admn-setting .all-menu ul li p{
+	border-bottom: 1px solid #80808038;
+	width: 85%;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+header .admn-setting .all-menu ul li a{
+	text-decoration: none;
+	color: var(--second-text-color); 
 }
