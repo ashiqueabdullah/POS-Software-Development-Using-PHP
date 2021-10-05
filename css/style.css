@@ -232,7 +232,6 @@ header .user ul li{
 	list-style-type: none;
 	display: block;
 	border-bottom: 1px solid #80808038;
-	
 }
 header .user ul li:last-child{
 	border-bottom: none;
@@ -254,5 +253,110 @@ header .user ul a:hover{
 	background-color: #80808038;
 }
 header input#user:checked ~ ul.myaccount{
+	display: block;
+}
+header .notification i{
+	position: relative;
+}
+header .notification span{
+	background-color: #f33838;
+	color: white;
+	position: absolute;
+	border-radius: 20px;
+	padding: 1px 4px;
+	left: 0;
+	top: -6px;
+	font-size: 10px;
+}
+
+header .message{
+	position: relative;
+}
+header .message span{
+	background-color: #f33838;
+	color: white;
+	position: absolute;
+	border-radius: 20px;
+	padding: 1px 4px;
+	left: 0;
+	top: -5px;
+	font-size: 10px;
+}
+header .time{
+	position: relative;
+}
+header .time span{
+	background-color: #f33838;
+	color: white;
+	position: absolute;
+	border-radius: 20px;
+	padding: 1px 4px;
+	left: 0;
+	top: -5px;
+	font-size: 10px;
+}
+header .notification ul.notifation-menu{
+	position: absolute;
+	display: none;
+	top: 9.7%;
+	width: 25%;
+	left: 65%;
+	background-color: white;
+	box-shadow: 2px 4px 20px -4px rgb(0 0 0 / 10%);
+}
+header .notification ul.notifation-menu li{
+	list-style-type: none;
+	display: block;
+	border-bottom: 1px solid #80808038;
+}
+header .notification ul.notifation-menu li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px 20px;
+}
+header .notification ul.notifation-menu li a .all-content{
+	display: flex;
+	align-items: center;
+}
+header .notification ul.notifation-menu li a .all-content .icon{
+	
+}
+header .notification ul.notifation-menu li a .all-content .icon i{
+	font-size: 40px;
+	background-color: #16d39a;
+	color: white;
+	border-radius:30px;
+	padding: 8px 10px;
+	margin: 10px;
+}
+header .notification ul.notifation-menu li a .all-content .content h4{
+	font-size: 14px;
+	margin: 0px; 
+	padding: 0px; 
+	font-family: var(--font-mons);
+}
+header .notification ul.notifation-menu li a .all-content .content p{
+	font-size: 10px;
+	margin: 0px; 
+	padding: 0px; 
+	font-family: var(--font-mons);
+}
+header .notification ul.notifation-menu li a .all-content .content small{
+	font-size: 10px;
+	margin: 0px; 
+	padding: 0px; 
+	font-family: var(--font-mons);
+	color: gray;
+}
+header .notification ul.notifation-menu li:last-child{
+	text-align: center;
+	color: gray;
+}
+header .notification label{
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+}
+header .notification input#notification:checked ~ .notifation-menu{
 	display: block;
 }
