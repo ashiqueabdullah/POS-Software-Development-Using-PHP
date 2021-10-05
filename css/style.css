@@ -209,8 +209,50 @@ header .user{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	cursor: pointer;
 }
 header .user img{
 	width: 30px;
+}
+header .user label{
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px;
+}
+header .user ul.myaccount{
+	display: none;
+	position: absolute;
+	margin: 0px;
+	width: 15%;
+	left: 84%;
+	top: 9.7%;
+	background-color: white;
+	box-shadow: 2px 4px 20px -4px rgb(0 0 0 / 10%);
+}
+header .user ul li{
+	list-style-type: none;
+	display: block;
+	border-bottom: 1px solid #80808038;
+	
+}
+header .user ul li:last-child{
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+header .user ul li a{
+	display: block;
+	text-decoration: none;
+	color: var(--name);
+	font-family: var(--font-mons);
+	color: var(--second-text-color); 
+	font-weight: 400;
+	font-size: 14px;
+	padding: 5px 15px;
+	transition: .3s;
+}
+header .user ul a:hover{
+	background-color: #80808038;
+}
+header input#user:checked ~ ul.myaccount{
+	display: block;
 }
