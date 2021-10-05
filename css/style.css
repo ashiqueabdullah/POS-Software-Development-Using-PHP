@@ -11,6 +11,7 @@
 	--second-text-color: #626e82;
 	--font-open: 'Open Sans', sans-serif;
 	--font-mons: 'Montserrat', sans-serif;
+	--home-bg: #F4F6F9;
 }
 *{
 	padding: 0px;
@@ -359,4 +360,66 @@ header .notification label{
 }
 header .notification input#notification:checked ~ .notifation-menu{
 	display: block;
+}
+.home{
+	padding: 20px 20px;
+	background-color: var(--home-bg);
+}
+.home .box-section{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.home .box-section .box-one{
+	background-image: var(--box-one);
+	width: 24%;
+	padding: 20px;
+	display: flex;
+	color: white;
+	align-items: center;
+}
+.home .box-section .box-two{
+	background-image: var(--box-two);
+	width: 24%;
+	padding: 20px;
+	display: flex;
+	color: white;
+	align-items: center;
+}
+.home .box-section .box-three{
+	background-image: var(--box-three);
+	width: 24%;
+	padding: 20px;
+	display: flex;
+	color: white;
+	align-items: center;
+}
+.home .box-section .box-four{
+	background-image: var(--box-four);
+	width: 24%;
+	padding: 20px;
+	display: flex;
+	color: white;
+	align-items: center;
+}
+.home .box-section .icon{
+	margin-right: 20px;
+}
+.home .box-section .icon i{
+	font-size: 60px;
+}
+.home .box-section .box-one .content{}
+.home .box-section .content h5{
+	margin: 0px;
+	padding: 0px;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: var(--font-mons);
+}
+.home .box-section .content p{
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: var(--font-mons);
 }
