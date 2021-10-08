@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Daily Tuition</title>
+		<title>POS Software</title>
 		<!--  Bootstrap css file  -->
 		<link rel="stylesheet" href="./css/bootstrap.min.css">
 		<!--  font awesome icons  -->
@@ -288,12 +288,53 @@
 					</div>
 				</div>
 			</div>
+			<div class="chart-section">
+				<div class="left">
+					<div class="top-section">
+						<div class="content">
+							<p>GRAPHICAL PRESENTATION OF INVOICES AND SALES DONE IN LAST 30 DAYS</p>
+						</div>
+						<div class="icon-section">
+							<ul>
+								<li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="chart">
+						<canvas id="myChart" height="150"></canvas>
+					</div>
+				</div>
+				<div class="right">
+					<p>Income Expenses</p>
+					<hr>
+					<canvas id="myChart2" height="100" width="100"></canvas>
+					<hr>
+					<p class="mt-2 myp">Sum of payment transactions between</p>
+					<h3>01-10-2021 ~ 07-10-2021</h3>
+					<hr>
+					<h4>Income : <span class="one"> Sales Transactions</span></h4>
+					<h4>Expenses : <span class="two">Purchase Transactions</span></h4>
+					<hr>
+					<div class="icome-expenses">
+						<div class="income">
+							<p>1,596.12 $</p>
+							<span>Today Income</span>
+						</div>
+						<div class="expenses">
+							<p>3,888.90 $</p>
+							<span>Today Expenses</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!--  ======================= End Header Area ============================== -->
 		<!--  Jquery js file  -->
 		<script src="./js/jquery.3.4.1.js"></script>
 		<!--  Bootstrap js file  -->
 		<script src="./js/bootstrap.min.js"></script>
+			<!--  Chart js file  -->
+		<script src="./js/chart.min.js"></script>
 		<!--  isotope js library  -->
 		<script src="./vendor/isotope/isotope.min.js"></script>
 		<!--  Magnific popup script file  -->

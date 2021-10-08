@@ -423,3 +423,91 @@ header .notification input#notification:checked ~ .notifation-menu{
 	font-weight: 400;
 	font-family: var(--font-mons);
 }
+.home .chart-section{
+	padding: 20px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.home .chart-section .left{
+	width: 60%;
+	background-color: white;
+	padding: 20px;
+}
+.home .chart-section .right{
+	width: 35%;
+	background-color: white;
+	padding: 20px;
+}
+.home .top-section{
+	display: flex;
+	justify-content: space-between;
+}
+.home .top-section p{
+	font-size: 18px;
+	font-family: var(--font-mons);
+	font-weight: 500;
+}
+.home .icon-section{}
+.home .icon-section ul{
+	margin: 0px;
+	padding: 0px;
+}
+.home .icon-section ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+.home .icon-section ul li a{
+	display: block;
+	font-size: 16px;
+}
+.home .chart-section .right p{
+	font-size: 18px;
+	font-family: var(--font-mons);
+	font-weight: 500;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.home .chart-section .right p.myp{
+	font-size: 14px;
+}
+.home .chart-section .right h3{
+	font-size: 14px;
+	font-weight: 400;
+	font-family: var(--font-mons);
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.home .chart-section .right h4{
+	font-size: 14px;
+    text-align: center;
+    font-family: var(--font-mons);
+}
+.home .chart-section .right h4 span{
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: white;
+}
+
+.home .chart-section .right h4 span.one{
+	background-color: #FFA0B4;
+}
+.home .chart-section .right h4 span.two{
+	background-color: #82CDFF;
+}
+.home .chart-section .right .icome-expenses{
+	display: flex;
+	justify-content: space-around;
+}
+.home .chart-section .right .icome-expenses p{
+	font-size: 25px;
+	font-weight: 500;
+	font-family: var(--font-mons);
+}
+.home .chart-section .right .icome-expenses span{
+	font-size: 15px;
+	font-weight: 400;
+	font-family: var(--font-mons);
+}
+.home .chart-section .right .expenses{}
