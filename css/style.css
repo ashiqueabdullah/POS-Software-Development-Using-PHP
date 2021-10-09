@@ -429,12 +429,12 @@ header .notification input#notification:checked ~ .notifation-menu{
 	justify-content: space-between;
 }
 .home .chart-section .left{
-	width: 60%;
+	width: 65%;
 	background-color: white;
 	padding: 20px;
 }
 .home .chart-section .right{
-	width: 35%;
+	width: 33%;
 	background-color: white;
 	padding: 20px;
 }
@@ -510,4 +510,57 @@ header .notification input#notification:checked ~ .notifation-menu{
 	font-weight: 400;
 	font-family: var(--font-mons);
 }
-.home .chart-section .right .expenses{}
+.home .chart-section .left .card-section{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.home .chart-section .left .card-section .card-common{
+	width: 32%;
+	margin: 8px 0px;
+	padding: 15px;
+}
+.home .chart-section .left .card-section h3{
+	color: white;
+	font-family: var(--font-mons);
+	font-size: 22px;
+}
+.home .chart-section .left .card-section p{
+	color: white;
+	font-family: var(--font-mons);
+	font-size: 16px;
+}
+.home .chart-section .left .card-section .progressbar{
+	width: 100%;
+	height: 10px;
+	border-radius: 20px;
+	background-color: #a1a1a194;
+	position: relative;
+	overflow: hidden;
+}
+.home .chart-section .left .card-section .progressbar:before{
+	height: 100%;
+	width: 80%;
+	position: absolute;
+	content: "";
+	background-color: white;
+}
+.home .chart-section .left .card-section .one{
+	background-color: #9ad0f5;
+}
+.home .chart-section .left .card-section .two{
+	background-color: #FFA0B4;
+}
+.home .chart-section .left .card-section .three{
+	background-color: #CCB2FF;
+}
+.home .chart-section .left .card-section .four{
+	background-color: #CCB2FF;
+}
+.home .chart-section .left .card-section .five{
+	
+	background-color: #9ad0f5;
+}
+.home .chart-section .left .card-section .six{
+	background-color: #FFA0B4;
+}

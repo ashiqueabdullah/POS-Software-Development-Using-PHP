@@ -5,7 +5,7 @@ $(document).ready(function () {
     data: {
         labels: ['1 Oct', '2 Oct', '3 Oct', '4 Oct', '5 Oct', '6 Oct'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Sales Report',
             data: [12, 19, 13, 15, 18, 16],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
